@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.map-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.user-location-marker {
+  background-color: #ff5722; /* Customize marker color */
+}
+
+.hospital-list a {
+  color: #1d4ed8; /* Custom link color */
+  transition: color 0.3s;
+}
+
+.hospital-list a:hover {
+  color: #2563eb; /* Custom link hover color */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #007bff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+.google-login-button {
+  background: linear-gradient(135deg, #1e3a8a, #1d4ed8); /* Darker gradient for the button */
+  color: white;
+  padding: 1.25rem 2.5rem; /* Adjust padding */
+  border-radius: 0.5rem; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Darker shadow */
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase; /* Uppercase text */
+  font-size: 1.25rem; /* Larger font size */
+  font-weight: 600; /* Bolder font weight */
+}
+
+.google-login-button:hover {
+  background: linear-gradient(135deg, #1e40af, #4f46e5); /* Darker gradient on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.7); /* Darker shadow on hover */
+}
+
+.App {
+  background-color: #111827; /* Dark background for the app */
+}
+
+.container {
+  background-color: #1f2937; /* Dark background for container */
+}
+
+.text-dark {
+  color: #e5e7eb; /* Light text color for dark mode */
+}
+
+.border-dark {
+  border-color: #374151; /* Dark border color */
+}
